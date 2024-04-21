@@ -1,0 +1,84 @@
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  *{
+    transition:1.5s;
+  }
+  body{
+    background-color:#0924A8;
+    display: grid;
+    place-items: center;
+  }
+    .earth{
+      height:300px;
+      width:300px;
+      background:radial-gradient(circle at 50% 1%,#0D9008,#2A64D9,#D53B3BBD);
+      border-radius:50%;
+      box-shadow:0 0 40px #FF0000;
+      overflow:hidden;
+      transition:1.5s;
+    }
+    .face{
+      position: absolute;
+      left:50%;
+      top:50%;
+    }
+    .eye1,.eye2{
+      height:50px;
+      width:25px;
+      background-color:black;
+      border-radius:50%;
+      position: absolute;
+      top:-60;
+    }
+    .eye1{
+      left: -50px;
+    }
+    .eye2{
+      left:50px;
+    }
+    .mouth{
+  position: absolute;
+  width: 178px;
+  height: 180px;
+  border: 15px solid transparent;
+  top:5px;
+  left: -75px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top-color:black;
+  transition:0s;
+}
+.earth:hover .mouth{
+    border-bottom-color:black;
+    border-top:none;
+    top:-90px;
+}
+.earth:hover{
+  box-shadow:0 0 100px #08FFB9;    background:radial-gradient(circle at 50% 1%,#0D9008,#2A64D9);
+
+}
+.earth:hover .eye1{
+  top:-100px;
+}
+.earth:hover .eye2{
+  top:-100px;
+}
+
+  </style>
+<body>
+  <div class="container">
+  <div class="earth">
+    <div class="face">
+      <div class="eye1"></div>
+      <div class="eye2"></div>
+      <div class="mouth">
+      </div>
+    </div>
+    <div class="plant"></div>
+  </div>
+  </div>
+
+</body>
